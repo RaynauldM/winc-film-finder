@@ -1,0 +1,47 @@
+p,
+h1,
+label {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: black;
+}
+body .header {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+}
+body .header h1 {
+  font-size: 4em;
+}
+body .header h1:hover {
+  cursor: pointer;
+}
+body nav {
+  margin-bottom: 3em;
+}
+body nav .filterBar {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2em;
+}
+body nav .inputContainer {
+  display: flex;
+  justify-content: center;
+}
+body nav .inputContainer #inputField {
+  margin: 0 0.5em;
+}
+body .posterList {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+  justify-content: space-around;
+}
+body .posterList li {
+  width: 20vw;
+  height: auto;
+  margin-bottom: 1.5em;
+}/*# sourceMappingURL=styles.css.map */

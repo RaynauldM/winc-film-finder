@@ -1,0 +1,52 @@
+p,
+h1,
+label {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: black;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+
+    h1 {
+      font-size: 4em;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  nav {
+    margin-bottom: 3em;
+
+    .filterBar {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 2em;
+    }
+
+    .inputContainer {
+      display: flex;
+      justify-content: center;
+      #inputField {
+        margin: 0 0.5em;
+      }
+    }
+  }
+
+  .posterList {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+    justify-content: space-around;
+    li {
+      width: 20vw;
+      height: auto;
+      margin-bottom: 1.5em;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winc Film Finder</title>
+    <link href="css\reset.css" type="text/css" rel="stylesheet" />
+    <link href="css\styles.css" type="text/css" rel="stylesheet" />
+    <script defer src="database.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header"><h1>Winc Film Finder</h1></header>
+    <nav>
+      <ul class="filterBar">
+        <li class="filter">
+          <input
+            type="radio"
+            id="latestMovies"
+            name="filterBar"
+            value="latestMovies"
+            class="check"
+          />
+          <label for="latestMovies">Latest movies, 2014 or newer</label>
+        </li>
+        <li class="filter">
+          <input
+            type="radio"
+            id="avengerMovies"
+            name="filterBar"
+            value="avengerMovies"
+            class="check"
+          />
+          <label for="avengerMovies">Avenger movies</label>
+        </li>
+        <li class="filter">
+          <input
+            type="radio"
+            id="XmenMovies"
+            name="filterBar"
+            value="xmenMovies"
+            class="check"
+          />
+          <label for="XmenMovies">X-Men movies</label>
+        </li>
+        <li class="filter">
+          <input
+            type="radio"
+            id="princessMovies"
+            name="filterBar"
+            value="princessMovies"
+            class="check"
+          />
+          <label for="princessMovies">Princess movies</label>
+        </li>
+
+        <li class="filter">
+          <input
+            type="radio"
+            id="batmanMovies"
+            name="filterBar"
+            value="batmanMovies"
+            class="check"
+          />
+          <label for="batmanMovies">Batman movies</label>
+        </li>
+      </ul>
+      <div class="inputContainer">
+        <label for="input">Search:</label>
+        <input type="text" id="inputField" name="input" />
+        <button id="inputBtn">Find me some movies!</button>
+      </div>
+    </nav>
+    <main class="posterContainer">
+      <ul id="posterList" class="posterList"></ul>
+    </main>
+  </body>
+</html>
